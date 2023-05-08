@@ -11,7 +11,7 @@ app.use(express.json());
 const User = require('./model/userScema');
 app.use(require('./router/ruth'));
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 
 app.listen(PORT,()=>{
